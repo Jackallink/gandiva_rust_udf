@@ -25,6 +25,7 @@ members = [
     "url_func",
     "bar_func",
     "cidr_func",
+    "escjson_func",    # add new escjson function for escaping json `"` strings.
 ]
 resolver = "2"
 
@@ -34,4 +35,5 @@ gandiva_rust_udf_macro = { version = "0.1.4" }
 gandiva_rust_udf_shared = { version = "0.1.5" }
 
 [lib]
+# crate-type = ["staticlib"] # local compiling on Mac osX
 crate-type = ["cdylib"]
